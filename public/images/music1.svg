@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="840" viewBox="0 0 800 840" fill="none">
+  <rect width="800" height="840" fill="#100D0C"/>
+  <rect x="60" y="60" width="680" height="720" rx="34" fill="#1A1716" stroke="#C8A96B" stroke-opacity="0.35"/>
+  <circle cx="400" cy="310" r="168" fill="#C8A96B" fill-opacity="0.18"/>
+  <circle cx="400" cy="310" r="90" fill="#C8A96B" fill-opacity="0.34"/>
+  <path d="M400 196V424" stroke="#F7F1E8" stroke-opacity="0.8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M286 310H514" stroke="#F7F1E8" stroke-opacity="0.8" stroke-width="8" stroke-linecap="round"/>
+  <text x="112" y="654" fill="#F7F1E8" font-family="Georgia, serif" font-size="54" letter-spacing="6">NATIONS ARISE</text>
+  <text x="114" y="706" fill="#C8A96B" font-family="Arial, sans-serif" font-size="18" letter-spacing="7">SINGLE • 2025</text>
+</svg>

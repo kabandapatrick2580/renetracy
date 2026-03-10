@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1100" viewBox="0 0 900 1100" fill="none">
+  <rect width="900" height="1100" fill="#0C0A0A"/>
+  <rect x="58" y="60" width="784" height="980" rx="36" fill="#181414" stroke="#C8A96B" stroke-opacity="0.3"/>
+  <rect x="164" y="222" width="260" height="520" rx="36" fill="#D8A952"/>
+  <rect x="486" y="252" width="206" height="492" rx="28" fill="#111111"/>
+  <circle cx="292" cy="172" r="82" fill="#2A2524"/>
+  <circle cx="586" cy="178" r="72" fill="#2A2524"/>
+  <path d="M148 880H748" stroke="#C8A96B" stroke-opacity="0.32" stroke-width="2"/>
+  <text x="154" y="942" fill="#F7F1E8" font-family="Georgia, serif" font-size="54" letter-spacing="8">RENE &amp; TRACY</text>
+  <text x="156" y="986" fill="#C8A96B" font-family="Arial, sans-serif" font-size="18" letter-spacing="7">KIGALI • RWANDA</text>
+</svg>

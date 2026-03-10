@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000" fill="none">
+  <rect width="800" height="1000" fill="#080808"/>
+  <rect x="72" y="70" width="656" height="860" rx="34" fill="#151111" stroke="#C8A96B" stroke-opacity="0.26"/>
+  <path d="M112 482C200 334 314 260 402 260C490 260 604 334 692 482" stroke="#C8A96B" stroke-opacity="0.35" stroke-width="18" stroke-linecap="round"/>
+  <path d="M142 568C224 434 322 374 402 374C482 374 580 434 662 568" stroke="#F7F1E8" stroke-opacity="0.15" stroke-width="10" stroke-linecap="round"/>
+  <text x="116" y="824" fill="#F7F1E8" font-family="Georgia, serif" font-size="42" letter-spacing="5">LIVE ATMOSPHERE</text>
+</svg>

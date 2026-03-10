@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" fill="none">
+  <rect width="1600" height="1000" fill="#0A0908"/>
+  <rect width="1600" height="1000" fill="url(#paint0_linear_1_2)"/>
+  <circle cx="1288" cy="132" r="240" fill="#C8A96B" fill-opacity="0.15"/>
+  <circle cx="284" cy="194" r="180" fill="#F7F1E8" fill-opacity="0.06"/>
+  <rect x="96" y="124" width="1408" height="752" rx="36" fill="url(#paint1_linear_1_2)" stroke="#C8A96B" stroke-opacity="0.25"/>
+  <rect x="172" y="236" width="484" height="472" rx="28" fill="#D8A952"/>
+  <rect x="816" y="188" width="388" height="520" rx="28" fill="#181516"/>
+  <rect x="1250" y="232" width="138" height="330" rx="20" fill="#1D1A1A"/>
+  <path d="M1164 540C1218 540 1262 497 1262 444C1262 391 1218 348 1164 348C1110 348 1066 391 1066 444C1066 497 1110 540 1164 540Z" fill="#2A2524"/>
+  <path d="M420 270C498 270 562 206 562 128H278C278 206 342 270 420 270Z" fill="#2A2524"/>
+  <text x="168" y="830" fill="#F7F1E8" font-family="Georgia, serif" font-size="74" letter-spacing="12">RENE &amp; TRACY</text>
+  <text x="170" y="884" fill="#C8A96B" font-family="Arial, sans-serif" font-size="20" letter-spacing="9">CINEMATIC GOSPEL MINISTRY</text>
+  <defs>
+    <linearGradient id="paint0_linear_1_2" x1="800" y1="0" x2="800" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A1412"/>
+      <stop offset="1" stop-color="#080808"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear_1_2" x1="800" y1="124" x2="800" y2="876" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#252120"/>
+      <stop offset="1" stop-color="#0D0B0B"/>
+    </linearGradient>
+  </defs>
+</svg>

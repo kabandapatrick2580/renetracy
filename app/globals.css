@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at top, rgba(200, 169, 107, 0.12), transparent 30%),
+    linear-gradient(180deg, #080808 0%, #0b0909 40%, #111 100%);
+  color: #f7f1e8;
+}
+
+* {
+  border-color: rgba(217, 200, 178, 0.14);
+}
+
+.section-shell {
+  @apply mx-auto w-full max-w-7xl px-6 py-20 md:px-10 lg:px-12;
+}
+
+.section-title {
+  @apply font-serif text-4xl tracking-[0.08em] text-ink md:text-5xl;
+}
+
+.section-copy {
+  @apply max-w-2xl text-sm leading-7 text-ink/75 md:text-base;
+}
+
+.glass-card {
+  @apply rounded-[2rem] border border-white/10 bg-white/[0.03] backdrop-blur-sm;
+}
+
+.gold-ring {
+  box-shadow:
+    inset 0 0 0 1px rgba(200, 169, 107, 0.22),
+    0 24px 60px rgba(0, 0, 0, 0.35);
+}
+
+.masonry-grid {
+  column-count: 1;
+  column-gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .masonry-grid {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .masonry-grid {
+    column-count: 3;
+  }
+}
