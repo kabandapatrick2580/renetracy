@@ -4,6 +4,32 @@
 
 :root {
   color-scheme: dark;
+  --page-bg:
+    radial-gradient(circle at top, rgba(200, 169, 107, 0.12), transparent 30%),
+    linear-gradient(180deg, #080808 0%, #0b0909 40%, #111 100%);
+  --page-text: #f7f1e8;
+  --footer-bg: rgba(0, 0, 0, 0.4);
+  --poster-shell: #080808;
+  --poster-panel:
+    linear-gradient(135deg, #12100f 0%, #0d0b0a 48%, #060505 100%);
+  --poster-inset: rgba(0, 0, 0, 0.2);
+  --poster-overlay: rgba(0, 0, 0, 0.45);
+  --header-bg: rgba(0, 0, 0, 0.82);
+}
+
+html[data-theme="ivory"] {
+  color-scheme: light;
+  --page-bg:
+    radial-gradient(circle at top, rgba(200, 169, 107, 0.14), transparent 30%),
+    linear-gradient(180deg, #f8f3ea 0%, #efe6d7 60%, #e5d7c2 100%);
+  --page-text: #18120f;
+  --footer-bg: rgba(217, 200, 178, 0.25);
+  --poster-shell: #f4ecdf;
+  --poster-panel:
+    linear-gradient(135deg, #f7efe3 0%, #f1e5d5 50%, #e9d8bf 100%);
+  --poster-inset: rgba(255, 250, 244, 0.62);
+  --poster-overlay: rgba(255, 248, 240, 0.72);
+  --header-bg: rgba(248, 243, 234, 0.88);
 }
 
 html {
@@ -11,14 +37,73 @@ html {
 }
 
 body {
-  background:
-    radial-gradient(circle at top, rgba(200, 169, 107, 0.12), transparent 30%),
-    linear-gradient(180deg, #080808 0%, #0b0909 40%, #111 100%);
-  color: #f7f1e8;
+  background: var(--page-bg);
+  color: var(--page-text);
+  font-feature-settings: "liga" 1, "kern" 1;
+  transition: background 0.35s ease, color 0.35s ease;
 }
 
 * {
   border-color: rgba(217, 200, 178, 0.14);
+}
+
+html[data-theme="ivory"] .hero-display,
+html[data-theme="ivory"] .section-title,
+html[data-theme="ivory"] .font-serif,
+html[data-theme="ivory"] .text-ink {
+  color: #18120f !important;
+}
+
+html[data-theme="ivory"] .text-ink\/70,
+html[data-theme="ivory"] .text-ink\/72,
+html[data-theme="ivory"] .text-ink\/75,
+html[data-theme="ivory"] .text-ink\/80,
+html[data-theme="ivory"] .text-ink\/85 {
+  color: rgba(24, 18, 15, 0.78) !important;
+}
+
+html[data-theme="ivory"] .bg-\[\#111111\],
+html[data-theme="ivory"] .bg-\[\#080808\],
+html[data-theme="ivory"] .bg-canvas,
+html[data-theme="ivory"] .bg-black\/15,
+html[data-theme="ivory"] .bg-black\/20,
+html[data-theme="ivory"] .bg-black\/30 {
+  background-color: rgba(255, 250, 244, 0.6) !important;
+}
+
+html:not([data-theme="ivory"]) .text-ink,
+html:not([data-theme="ivory"]) .hero-display,
+html:not([data-theme="ivory"]) .section-title {
+  color: #f7f1e8 !important;
+}
+
+html:not([data-theme="ivory"]) .bg-\[\#080808\],
+html:not([data-theme="ivory"]) .bg-\[\#111111\] {
+  background-color: #080808 !important;
+}
+
+html[data-theme="ivory"] footer {
+  background: var(--footer-bg);
+}
+
+.poster-shell {
+  background: var(--poster-shell);
+}
+
+.poster-panel {
+  background: var(--poster-panel);
+}
+
+.poster-inset {
+  background: var(--poster-inset);
+}
+
+.poster-overlay-card {
+  background: var(--poster-overlay);
+}
+
+.site-header-bg {
+  background: var(--header-bg);
 }
 
 .section-shell {
@@ -26,11 +111,30 @@ body {
 }
 
 .section-title {
-  @apply font-serif text-4xl tracking-[0.08em] text-ink md:text-5xl;
+  @apply font-serif text-4xl tracking-[0.05em] text-ink md:text-5xl;
 }
 
 .section-copy {
   @apply max-w-2xl text-sm leading-7 text-ink/75 md:text-base;
+}
+
+.hero-kicker {
+  @apply font-sans text-[0.65rem] uppercase tracking-[0.38em] text-sand/90;
+}
+
+.hero-display {
+  font-family: "Arial Black", "Avenir Next Condensed", "Helvetica Neue", sans-serif;
+  @apply text-[4.5rem] font-black uppercase leading-[0.84] tracking-[0.06em] text-sand sm:text-[6rem] md:text-[8rem] lg:text-[10rem];
+}
+
+.hero-script {
+  font-family: "Snell Roundhand", "Brush Script MT", "Apple Chancery", cursive;
+  @apply text-[4.25rem] leading-none text-ink sm:text-[5.5rem] md:text-[7rem] lg:text-[8.5rem];
+}
+
+.hero-body {
+  color: rgba(247, 241, 232, 0.78);
+  @apply max-w-md font-sans text-sm leading-7 md:text-base;
 }
 
 .glass-card {

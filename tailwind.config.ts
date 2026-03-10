@@ -10,8 +10,10 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        serif: ["Baskerville", "Cormorant Garamond", "Georgia", "serif"],
-        sans: ["Avenir Next", "Manrope", "Segoe UI", "sans-serif"]
+        serif: ["Iowan Old Style", "Palatino Linotype", "Book Antiqua", "Georgia", "serif"],
+        sans: ["Avenir Next", "Helvetica Neue", "Segoe UI", "sans-serif"],
+        display: ["Arial Black", "Avenir Next Condensed", "Helvetica Neue", "sans-serif"],
+        script: ["Snell Roundhand", "Brush Script MT", "Apple Chancery", "cursive"]
       },
       colors: {
         canvas: "#080808",
