@@ -1,63 +1,112 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { FaInstagram, FaSpotify, FaYoutube } from "react-icons/fa";
 import { LinkButton } from "@/components/ui/link-button";
+import { heroSlides, siteConfig } from "@/data/site";
 
 export function HeroSection() {
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  useEffect(() => {
+    const interval = window.setInterval(() => {
+      setActiveSlide((current) => (current + 1) % heroSlides.length);
+    }, 5000);
+
+    return () => window.clearInterval(interval);
+  }, []);
+
   return (
-    <section className="pb-6 pt-0 md:pb-8">
+    <section className="pt-0">
       <div className="poster-shell w-full">
-        <div className="poster-panel relative overflow-hidden border-y border-gold/20 px-5 pb-6 pt-8 md:px-10 md:pb-8 md:pt-10">
+        <div className="poster-panel relative overflow-hidden border-y border-gold/20 px-5 py-8 md:px-10 md:py-10">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(200,169,107,0.16),transparent_35%)]" />
-          <div className="relative flex min-h-[82vh] flex-col">
-            <div className="relative mx-auto flex w-full max-w-[1500px] flex-1 flex-col">
+          <div className="relative flex min-h-[calc(100vh-6rem)] flex-col">
+            <div className="relative mx-auto flex w-full max-w-[1500px] flex-1 flex-col justify-center">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.9, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-                className="relative z-10 pt-2"
+                className="relative z-10 grid min-h-[calc(100vh-10rem)] items-stretch gap-8 pt-2 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12"
               >
-                <p className="hero-kicker mb-4">Kigali, Rwanda • Gospel Music Ministry</p>
-                <div className="relative">
-                  <div className="hero-display flex flex-wrap items-end gap-x-4 leading-[0.8]">
-                    <span>RENE</span>
-                    <span>&</span>
-                    <span>TRACY</span>
+                <div className="flex flex-col">
+                  <div className="mb-5 flex items-center justify-between gap-4">
+                    <p className="hero-kicker">Kigali, Rwanda • Gospel Music Ministry</p>
+                    <div className="hidden items-center gap-2 md:flex">
+                      {heroSlides.map((slide, index) => (
+                        <button
+                          key={slide.src}
+                          type="button"
+                          aria-label={`Show slide ${index + 1}`}
+                          onClick={() => setActiveSlide(index)}
+                          className={`h-2.5 rounded-full transition ${
+                            index === activeSlide ? "w-10 bg-gold" : "w-2.5 bg-sand/35 hover:bg-sand/60"
+                          }`}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                  <div className="poster-inset relative min-h-[24rem] overflow-hidden border border-gold/15 md:min-h-[38rem]">
+                    <AnimatePresence mode="wait">
+                      <motion.div
+                        key={heroSlides[activeSlide].src}
+                        initial={{ opacity: 0.2, scale: 1.04 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0.2, scale: 0.98 }}
+                        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+                        className="absolute inset-0"
+                      >
+                        <Image
+                          src={heroSlides[activeSlide].src}
+                          alt={heroSlides[activeSlide].alt}
+                          fill
+                          priority={activeSlide === 0}
+                          className="object-cover object-center"
+                          sizes="(max-width: 1024px) 100vw, 55vw"
+                        />
+                      </motion.div>
+                    </AnimatePresence>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent" />
+                    <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-5 md:p-6">
+                      <div className="poster-overlay-card px-4 py-3 backdrop-blur-sm">
+                        <p className="hero-kicker">{heroSlides[activeSlide].eyebrow}</p>
+                      </div>
+                      <div className="flex items-center gap-2 md:hidden">
+                        {heroSlides.map((slide, index) => (
+                          <button
+                            key={slide.src}
+                            type="button"
+                            aria-label={`Show slide ${index + 1}`}
+                            onClick={() => setActiveSlide(index)}
+                            className={`h-2.5 rounded-full transition ${
+                              index === activeSlide ? "w-8 bg-gold" : "w-2.5 bg-sand/35"
+                            }`}
+                          />
+                        ))}
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
-                  <LinkButton href="/music">Listen</LinkButton>
-                  <LinkButton href="/videos" variant="secondary">
-                    Watch
-                  </LinkButton>
-                  <LinkButton href="/about" variant="secondary">
-                    About
-                  </LinkButton>
-                </div>
-              </motion.div>
 
-              <motion.div
-                initial={{ opacity: 0, y: 36 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.95, delay: 0.18, ease: [0.22, 1, 0.36, 1] }}
-                className="relative mt-8 flex-1"
-              >
-                <div className="poster-inset relative mx-auto min-h-[24rem] max-w-[1180px] overflow-hidden border border-gold/15 md:min-h-[33rem]">
-                  <Image
-                    src="/images/hero.png"
-                    alt="Rene and Tracy hero portrait"
-                    fill
-                    priority
-                    className="object-cover object-center"
-                    sizes="(max-width: 1280px) 100vw, 1180px"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
-                  <div className="poster-overlay-card absolute bottom-6 right-6 max-w-xs px-4 py-3 backdrop-blur-sm">
-                    <p className="hero-body text-right">
-                      Nations Intimately Experiencing In Christ Realities through worship, ministry, and songs that lead people deeper into communion with Christ.
-                    </p>
+                <div className="flex flex-col justify-center lg:pl-2">
+                  <p className="hero-kicker mb-4">Married Gospel Duo • Since 2020</p>
+                  <div className="hero-display leading-[0.84]">
+                    <span className="block">RENE</span>
+                    <span className="block">& TRACY</span>
+                  </div>
+                  <p className="mt-6 max-w-xl text-base leading-8 text-ink/80 md:text-lg">
+                    {siteConfig.name} create worship environments through music, ministry, and visual storytelling that draw people into a deeper relationship with Christ.
+                  </p>
+                  <div className="mt-8 flex flex-wrap gap-4">
+                    <LinkButton href="/music">Listen</LinkButton>
+                    <LinkButton href="/videos" variant="secondary">
+                      Watch
+                    </LinkButton>
+                    <LinkButton href="/about" variant="secondary">
+                      About
+                    </LinkButton>
                   </div>
                 </div>
               </motion.div>

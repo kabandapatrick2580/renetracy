@@ -5,12 +5,14 @@ type LinkButtonProps = {
   href: string;
   children: ReactNode;
   variant?: "primary" | "secondary";
+  className?: string;
 };
 
 export function LinkButton({
   href,
   children,
-  variant = "primary"
+  variant = "primary",
+  className = ""
 }: LinkButtonProps) {
   const styles =
     variant === "primary"
@@ -20,7 +22,7 @@ export function LinkButton({
   return (
     <Link
       href={href}
-      className={`inline-flex items-center justify-center rounded-full px-6 py-3 text-sm uppercase tracking-[0.2em] transition duration-300 ${styles}`}
+      className={`inline-flex items-center justify-center rounded-full px-6 py-3 text-sm uppercase tracking-[0.2em] transition duration-300 ${styles} ${className}`}
     >
       {children}
     </Link>

@@ -103,3 +103,26 @@ export const galleryItems: GalleryItem[] = [
     heightClass: "h-[22rem]"
   }
 ];
+
+export const heroSlides = [
+  {
+    src: "/images/hero.png",
+    alt: "Rene and Tracy portrait in Kigali",
+    eyebrow: "Featured Portrait"
+  },
+  {
+    src: "/images/gallery1.svg",
+    alt: "Rene and Tracy in a worship session",
+    eyebrow: "Worship Session"
+  },
+  {
+    src: "/images/gallery3.svg",
+    alt: "Editorial portrait of Rene and Tracy",
+    eyebrow: "Editorial Portrait"
+  },
+  {
+    src: "/images/gallery4.svg",
+    alt: "Live atmosphere during ministry",
+    eyebrow: "Live Atmosphere"
+  }
+];

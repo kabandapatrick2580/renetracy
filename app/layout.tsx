@@ -16,6 +16,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="font-sans text-ink antialiased">
+        <div className="edge-pattern edge-pattern-left" aria-hidden="true" />
+        <div className="edge-pattern edge-pattern-right" aria-hidden="true" />
         <StructuredData
           breadcrumbs={[
             { name: siteConfig.name, item: siteConfig.url }
@@ -29,7 +31,7 @@ export default function RootLayout({
             </div>
           </div>
         </header>
-        <main className="pt-24 md:pt-28">{children}</main>
+        <main className="relative z-10 pt-24 md:pt-28">{children}</main>
         <Footer />
       </body>
     </html>
