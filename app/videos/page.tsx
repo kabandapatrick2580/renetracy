@@ -5,8 +5,8 @@ import { videos } from "@/data/site";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "In CHrist Now | Alive in Us",
-  path: "https://www.youtube.com/watch?v=p28jkdCaSaA&pp=ygUOcmVuZSBhbmQgdHJhY3k%3D",
+  title: "Videos",
+  path: "/videos",
   description: "Watch live worship sessions, acoustic ministry nights, and official videos from Rene & Tracy."
 });
 
