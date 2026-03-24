@@ -10,7 +10,7 @@ export function AboutPreviewSection() {
         <div className="glass-card gold-ring relative overflow-hidden rounded-[2.5rem]">
           <div className="relative aspect-[4/5]">
             <Image
-              src="/images/artist-couple.svg"
+              src="/images/rene_tracy.jpg"
               alt="Rene and Tracy portrait"
               fill
               className="object-cover"

@@ -36,7 +36,7 @@ export default function AboutPage() {
           <div className="glass-card rounded-[2rem] p-8">
             <p className="text-xs uppercase tracking-[0.28em] text-gold">Artist Story</p>
             <p className="mt-4 text-sm leading-8 text-ink/75">
-              Since 2020, Rene & Tracy have been building a ministry rooted in worship, family, and the revelation of Christ. Their sound blends devotional sincerity with polished contemporary gospel production, creating music that speaks both to intimate prayer spaces and large congregational moments.
+              Since 2023, Rene & Tracy have been building a ministry rooted in worship, family, and the revelation of Christ. Their sound blends devotional sincerity with polished contemporary gospel production, creating music that speaks both to intimate prayer spaces and large congregational moments.
             </p>
           </div>
           <div className="glass-card rounded-[2rem] p-8">

@@ -32,42 +32,42 @@ export const navItems: NavItem[] = [
 
 export const musicReleases: MusicRelease[] = [
   {
-    title: "Nations Arise",
+    title: "Imirimo yawe irivugira",
     year: "2025",
-    cover: "/images/music1.svg",
+    cover: "/images/imirimo.png",
     spotifyUrl: "#",
     appleUrl: "#",
-    description: "A worship single centered on revival, intimacy, and surrender."
+    description: "A worship single centered on greace and the power of God's work in our lives."
   },
   {
-    title: "Closer Still",
+    title: "Jehovah",
     year: "2024",
-    cover: "/images/music2.svg",
+    cover: "/images/rene_tracy.jpg",
     spotifyUrl: "#",
     appleUrl: "#",
-    description: "A reflective gospel anthem crafted for prayer rooms and congregations."
+    description: "A powerful anthem declaring the majesty and faithfulness of God as Jehovah."
   },
   {
-    title: "Christ Realities",
+    title: "Niryubahwe",
     year: "2023",
-    cover: "/images/music1.svg",
+    cover: "/images/niryubahwe.png",
     spotifyUrl: "#",
     appleUrl: "#",
-    description: "A ministry-forward release speaking identity, grace, and bold faith."
+    description: "A heartfelt worship song expressing adoration and praise to God for His goodness and faithfulness."
   }
 ];
 
 export const videos: VideoItem[] = [
   {
-    title: "Live Worship Session",
-    embedUrl: "https://www.youtube.com/embed/VIDEO_ID_1",
+    title: "In Christ Now | Alive in Us",
+    embedUrl: "https://www.youtube.com/watch?v=p28jkdCaSaA&pp=ygUOcmVuZSBhbmQgdHJhY3k%3D",
     thumbnail: "/images/gallery1.svg",
     description: "An intimate worship moment from Kigali.",
     uploadDate: "2025-04-10"
   },
   {
-    title: "Acoustic Ministry Night",
-    embedUrl: "https://www.youtube.com/embed/VIDEO_ID_2",
+    title: "In Christ now worship #Worship experience",
+    embedUrl: "https://www.youtube.com/watch?v=qDvYVflAff4&t=4373s",
     thumbnail: "/images/gallery2.svg",
     description: "A stripped-back ministry set focused on prayer and healing.",
     uploadDate: "2025-06-21"
@@ -111,17 +111,17 @@ export const heroSlides = [
     eyebrow: "Featured Portrait"
   },
   {
-    src: "/images/gallery1.svg",
+    src: "/images/rene_tracy.jpg",
     alt: "Rene and Tracy in a worship session",
     eyebrow: "Worship Session"
   },
   {
-    src: "/images/gallery3.svg",
+    src: "/images/rene_tracy_portrait.png",
     alt: "Editorial portrait of Rene and Tracy",
     eyebrow: "Editorial Portrait"
   },
   {
-    src: "/images/gallery4.svg",
+    src: "/images/tracy.png",
     alt: "Live atmosphere during ministry",
     eyebrow: "Live Atmosphere"
   }

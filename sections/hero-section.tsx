@@ -91,7 +91,7 @@ export function HeroSection() {
                 </div>
 
                 <div className="flex flex-col justify-center lg:pl-2">
-                  <p className="hero-kicker mb-4">Married Gospel Duo • Since 2020</p>
+                  <p className="hero-kicker mb-4">Married Gospel Duo • Since 2023</p>
                   <div className="hero-display leading-[0.84]">
                     <span className="block">RENE</span>
                     <span className="block">& TRACY</span>
