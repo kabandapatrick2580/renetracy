@@ -60,7 +60,7 @@ export const musicReleases: MusicRelease[] = [
 export const videos: VideoItem[] = [
   {
     title: "In Christ Now | Alive in Us",
-    embedUrl: "https://www.youtube.com/embed/p28jkdCaSaA&pp=ygUOcmVuZSBhbmQgdHJhY3k%3D",
+    embedUrl: "https://www.youtube.com/embed/p28jkdCaSaA&pp",
     thumbnail: "/images/gallery1.svg",
     description: "An intimate worship moment from Kigali.",
     uploadDate: "2025-04-10"
