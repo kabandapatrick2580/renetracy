@@ -60,21 +60,21 @@ export const musicReleases: MusicRelease[] = [
 export const videos: VideoItem[] = [
   {
     title: "In Christ Now | Alive in Us",
-    embedUrl: "https://www.youtube.com/watch?v=p28jkdCaSaA&pp=ygUOcmVuZSBhbmQgdHJhY3k%3D",
+    embedUrl: "https://www.youtube.com/embed/p28jkdCaSaA&pp=ygUOcmVuZSBhbmQgdHJhY3k%3D",
     thumbnail: "/images/gallery1.svg",
     description: "An intimate worship moment from Kigali.",
     uploadDate: "2025-04-10"
   },
   {
     title: "In Christ now worship #Worship experience",
-    embedUrl: "https://www.youtube.com/watch?v=qDvYVflAff4&t=4373s",
+    embedUrl: "https://www.youtube.com/embed/qDvYVflAff4&t=4373s",
     thumbnail: "/images/gallery2.svg",
     description: "A stripped-back ministry set focused on prayer and healing.",
     uploadDate: "2025-06-21"
   },
   {
     title: "Official Music Video",
-    embedUrl: "https://www.youtube.com/embed/VIDEO_ID_3",
+    embedUrl: "https://www.youtube.com/embed/yDlwA_8i7Sw&pp=ygUOcmVuZSBhbmQgdHJhY3k%3D",
     thumbnail: "/images/gallery3.svg",
     description: "A cinematic visual anchored in worship and testimony.",
     uploadDate: "2025-09-14"
